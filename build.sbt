@@ -13,16 +13,16 @@ Configuration.settings
 /** ********* PROD DEPENDENCIES *****************/
 /** *********************************************/
 libraryDependencies ++= Seq(
-  "com.github.nscala-time" %% "nscala-time" % "2.12.0",
-  "com.lihaoyi" %% "pprint" % "0.4.1"
+  "com.github.nscala-time" %% "nscala-time" % "2.30.0",
+  "com.lihaoyi" %% "pprint" % "0.7.3"
 )
 
 /** *********************************************/
 /** ********* TEST DEPENDENCIES *****************/
 /** *********************************************/
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.0.0" % Test,
-  "org.scalamock" %% "scalamock-scalatest-support" % "3.2.2" % Test
+  "org.scalatest" %% "scalatest" % "3.2.11" % Test,
+//  "org.scalamock" %% "scalamock-scalatest-support" % "3.6.0" % Test
 )
 
 /** *********************************************/

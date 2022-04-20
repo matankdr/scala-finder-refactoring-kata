@@ -4,19 +4,19 @@ import sbt.Keys._
 object Configuration {
   val settings = Seq(
     organization := "tv.codely",
-    scalaVersion := "2.11.8",
+    scalaVersion := "2.13.8",
 
     // Compiler options
-    scalacOptions <<= version map { v: String =>
-      val default = Seq(
-        "-Xlint", // More warnings when compiling
-        "-Xfatal-warnings", // Warnings became errors
-        "-unchecked", // More warnings. Strict
-        "-deprecation", // Warnings deprecation
-        "-feature" // Advise features
-      )
-      if (v.endsWith("SNAPSHOT")) default :+ "-Xcheckinit" else default // Check against early initialization
-    },
+//    scalacOptions.version map { v: String =>
+//      val default = Seq(
+//        "-Xlint", // More warnings when compiling
+//        "-Xfatal-warnings", // Warnings became errors
+//        "-unchecked", // More warnings. Strict
+//        "-deprecation", // Warnings deprecation
+//        "-feature" // Advise features
+//      )
+//      if (v.endsWith("SNAPSHOT")) default :+ "-Xcheckinit" else default // Check against early initialization
+//    },
     javaOptions += "-Duser.timezone=UTC",
 
     // Test options

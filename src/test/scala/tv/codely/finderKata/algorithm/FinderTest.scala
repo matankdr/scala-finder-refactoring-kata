@@ -1,12 +1,12 @@
 package tv.codely.finderKata.algorithm
 
-import java.util.{ArrayList, Date}
-
+import java.util.ArrayList
 import com.github.nscala_time.time.Imports._
 import org.scalatest._
-import org.scalatest.Matchers._
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 
-final class FinderTest extends WordSpec with BeforeAndAfterEach {
+final class FinderTest extends AnyWordSpec with BeforeAndAfterEach with Matchers {
 
   var sue: Thing = new Thing()
   var greg: Thing = new Thing()
